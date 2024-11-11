@@ -1,0 +1,22 @@
+C:\Users\aras\Desktop\Gauss
+2
+0.5
+1
+5
+20000
+1
+1
+###########################
+Potentiels a choisir en haut
+
+ 1: barriere de potentiel
+ 2: gaussienne
+ 3: 2 barrères de potentiel
+ 4: 3 barrière de potentiel
+ 5: barrière triangulaire
+ 6: Alpha decay barriere
+
+Le sens des parametres
+chemin du repertoir,choix du potentiel,E,m,a,N,V0,lambda
+###########################
+

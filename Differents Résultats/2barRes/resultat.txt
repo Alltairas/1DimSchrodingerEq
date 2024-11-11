@@ -1,0 +1,13 @@
+E= 0.47571
+m= 1
+a= 5
+N= 20000
+V0= 1
+ 3: 2 barrères de potentiel 
+R calculé numériquement = 0.995682698931493
+T calculé numériquement = 0.00431730120015921
+Le coefficient de reflexion numérique par euler est R= 0.0202525776575487
+Le coefficient de transmission numérique par euler est T= 0.979747422342451
+écart entre les 2 méthodes est =  0.975430121273945
+energie resonance = 0.47380716 coeff t =0.99987149624891  à la taille 5
+taille resonance = 3.305 coeff t =0.99987149624891  à l'énergie 0.47571

@@ -1,0 +1,30 @@
+Ce programme a pour but de calculer numériquement les partie réel et imaginaire du fonction d'onde solution de l'équation de Schrödinger a 1 dimension stationnaire.
+Il donne comme sorti une répertoire dans lequel se trouve plusieurs fichier txt, contenant:
+->Coeff_transmition_fonction_Eeta.txt : Celle-ci contient les coordonnées de la fonction T(E) et T(x), le coefficient de Transmission 
+->ComplexPsiValues1.txt : Celle-ci contient sous forme de colonne les valeurs de Psi(x) calculé pour la zone de x avant le potentiel
+->ComplexPsiValues2.txt : Celle-ci contient sous forme de colonne les valeurs de Psi(x) calculé pour la zone de x dans le potentiel
+->ComplexPsiValues3.txt : Celle-ci contient sous forme de colonne les valeurs de Psi(x) calculé pour la zone de x apres le potentiel
+->potentiel.txt : Celle-ci contient sous forme de colonne les valeurs du potentiel choisi dans la largeur a choisi
+->resultat.txt : Celle-ci contient les valeurs des parametres choisis, le choix du type de barriere de potentiel, les résultats numérique et analytique des coefficients
+		de réflexion et de transmission par les deux méthodes, l'écart entre les deux, ainsi que le premier énergie de résonance sa coefficient de transmission et sa position en x.
+
+Instruction d'utilisation:
+1)Dans le répertoire ou se trouve le fichier sch.exe, se trouve aussi un fichier "valeur.txt" dans lequel l'utilisateur doit entrer les parametre nécessaire pour le bon fonctionnement 
+du programme. Ces parametres dans l'ordre a fournir sont:
+	chemin du répertoire fini par le nom du répertoire ou se générera les fichier txt résultantes		
+	le nombre du potentiel voulu, voir dans "valeur.txt"
+	E:l'énergie
+	m:la masse
+	a:la largeur du potentiel
+	N:le nombre total de point de Psi a calculer
+	V0:la valeur maximal du potentiel(dépendant du type de celle-ci)
+2)cliquer ou executer l'application sch.exe et attendre que le répertoire apparaisse sur le chemin spécifier dans "valeur.txt"
+
+Pour visualiser la fonction d'onde sous Gnuplot:
+1)	Télécharger un fichier txt que vous souhaitez visualiser
+2)	Ouvir Gnuplot 
+3)	Aller dans le répértoire où le téléchargement est réalisé sur Gnuplot par: File -> Change Directory
+4.a)	Taper la commande: << plot "File Name.txt"  u 1:2 w l>> pour la partie réel du Psi par la méthode 1
+4.b)	Taper la commande: << plot "File Name.txt"  u 1:3 w l>> pour la partie imaginaire du Psi par la méthode 1
+4.c)	Taper la commande: << plot "File Name.txt"  u 1:4 w l>> pour la partie réel du Psi par la méthode 2
+4.d)	Taper la commande: << plot "File Name.txt"  u 1:4 w l>> pour la partie imaginaire du Psi par la méthode 2

@@ -1,0 +1,49 @@
+\documentclass[a4paper,11pt,final]{article}
+\usepackage[margin=1.5cm]{geometry}
+
+\usepackage[english,./french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[pdftex]{graphicx}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage[french]{varioref}
+\usepackage{siunitx}
+
+\newcommand{\reporttitle}{Etats de diffusion pour l’équation de Schrödinger 1D stationnaire}     % Titre
+\newcommand{\reportauthor}{Jean \textsc{Dupont}\\ Louis \textsc{Martin}} % Auteur
+\newcommand{\reportsubject}{Projet informatique} % Sujet
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\setlength{\parskip}{1ex} % Espace entre les paragraphes
+
+\hypersetup{
+    pdftitle={\reporttitle},%
+    pdfauthor={\reportauthor},%
+    pdfsubject={\reportsubject},%
+    pdfkeywords={rapport} {vos} {mots} {clés}
+}
+
+\begin{document}
+  \include{title}
+  \cleardoublepage 
+  \tableofcontents % Table des matières
+  \sloppy          % Justification moins stricte : des mots ne dépasseront pas des paragraphes
+  \cleardoublepage
+  
+  \include{intro}
+  \cleardoublepage
+  \include{partie1}
+  \cleardoublepage
+  \include{partie2}
+  \cleardoublepage
+  \include{partie3.tex}
+  \cleardoublepage
+  \include{conclusion}
+  \cleardoublepage
+ 
+  \bibliographystyle{plain}
+    \bibliography{reference}
+    
+
+\end{document}
+
